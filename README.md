@@ -54,25 +54,33 @@ Licensed under the MIT license which is available here, [MIT license](https://gi
 
 ## 🧬 Related
 
-[@igor.dvlpr/hook](https://www.npmjs.com/package/@igor.dvlpr/hook)
+[@igor.dvlpr/regkeys](https://www.npmjs.com/package/@igor.dvlpr/regkeys)
 
-> _🪝 Hooks onto a JavaScript prototype, either extending or changing its behavior or replacing it completely. 👺_
+> _📚 An npm package for fetching Windows registry keys. 🗝_
+
+<br>
+
+[@igor.dvlpr/pathexists](https://www.npmjs.com/package/@igor.dvlpr/pathexists)
+
+> _🧲 Provides ways of properly checking if a path exists inside a given array of files/directories both on Windows and UNIX-like operating systems. 🗺_
+
+<br>
 
 [@igor.dvlpr/astro-post-excerpt](https://www.npmjs.com/package/@igor.dvlpr/astro-post-excerpt)
 
 > _⭐ An Astro component that renders post excerpts for your Astro blog - directly from your Markdown files. Astro v2 collections are supported as well! 💎_
 
-[@igor.dvlpr/duoscribi](https://www.npmjs.com/package/@igor.dvlpr/duoscribi)
+<br>
 
-> _✒ DúöScríbî allows you to convert letters with diacritics to regular letters. 🤓_
+[@igor.dvlpr/uarray](https://www.npmjs.com/package/@igor.dvlpr/uarray)
 
-[@igor.dvlpr/odin](https://www.npmjs.com/package/@igor.dvlpr/odin)
+> _🎉 Provides UArray, an Array type that supports negative indices/indexes, just wrap your regular JavaScript array with UArray() and you are all set! 🙌_
 
-> _🔱 Odin is an Object wrapper that allows you to create objects and set their attributes - all at once! 🔺_
+<br>
 
-[@igor.dvlpr/strip-html](https://www.npmjs.com/package/@igor.dvlpr/strip-html)
+[@igor.dvlpr/registry-apppaths](https://www.npmjs.com/package/@igor.dvlpr/registry-apppaths)
 
-> _🥞 Removes HTML code from the given string. Can even extract text-only from the given an HTML string. ✨_
+> _🪀 A Node.js module for reading the AppPaths registry key on Windows. Useful for retrieving applications that can be launched from the command prompt. 🗃_
 
 <br>
 <br>
