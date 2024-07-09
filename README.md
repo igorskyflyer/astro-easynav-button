@@ -1,9 +1,9 @@
-# $project
+# Easy Nav Button (⬆️/⬇️)
 
 <br>
 
 <p align="center">
-	$desc
+	🧭 Add an easy-to-use navigational button (jump to top/bottom) to your Astro site. 🔼
 </p>
 
 <br>
@@ -37,7 +37,7 @@
 Install it by executing:
 
 ```shell
-npm i "@igor.dvlpr/$pkg"
+npm i "@igor.dvlpr/astro-easy-nav-button"
 ```
 
 <br>
@@ -48,35 +48,33 @@ npm i "@igor.dvlpr/$pkg"
 
 ## 🪪 License
 
-Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/$repo/blob/main/LICENSE).
+Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/astro-easy-nav-button/blob/main/LICENSE).
 
 ---
 
 ## 🧬 Related
 
-[]()
+[@igor.dvlpr/hook](https://www.npmjs.com/package/@igor.dvlpr/hook)
 
-> __
+> _🪝 Hooks onto a JavaScript prototype, either extending or changing its behavior or replacing it completely. 👺_
 
-[]()
+[@igor.dvlpr/astro-post-excerpt](https://www.npmjs.com/package/@igor.dvlpr/astro-post-excerpt)
 
-> __
+> _⭐ An Astro component that renders post excerpts for your Astro blog - directly from your Markdown files. Astro v2 collections are supported as well! 💎_
 
-[]()
+[@igor.dvlpr/duoscribi](https://www.npmjs.com/package/@igor.dvlpr/duoscribi)
 
-> __
+> _✒ DúöScríbî allows you to convert letters with diacritics to regular letters. 🤓_
 
-[]()
+[@igor.dvlpr/odin](https://www.npmjs.com/package/@igor.dvlpr/odin)
 
-> __
+> _🔱 Odin is an Object wrapper that allows you to create objects and set their attributes - all at once! 🔺_
 
-[]()
+[@igor.dvlpr/strip-html](https://www.npmjs.com/package/@igor.dvlpr/strip-html)
 
-> __
+> _🥞 Removes HTML code from the given string. Can even extract text-only from the given an HTML string. ✨_
 
 <br>
 <br>
 
->
-> Provided by **Igor Dimitrijević** ([*@igorskyflyer*](https://github.com/igorskyflyer/)).
->
+> Provided by **Igor Dimitrijević** ([_@igorskyflyer_](https://github.com/igorskyflyer/)).
