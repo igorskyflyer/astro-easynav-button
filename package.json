@@ -1,5 +1,5 @@
 {
-	"name": "@igor.dvlpr/astro-easy-nav-button",
+	"name": "@igor.dvlpr/astro-easynav-button",
 	"version": "1.0.0",
 	"description": "🧭 Add an easy-to-use navigational button (jump to top/bottom) to your Astro site. 🔼",
 	"sideEffects": false,
@@ -34,13 +34,13 @@
 	"license": "MIT",
 	"author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
 	"funding": "https://ko-fi.com/igorskyflyer",
-	"homepage": "https://github.com/igorskyflyer/astro-easy-nav-button",
+	"homepage": "https://github.com/igorskyflyer/astro-easynav-button",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/igorskyflyer/astro-easy-nav-button.git"
+		"url": "git+https://github.com/igorskyflyer/astro-easynav-button.git"
 	},
 	"bugs": {
-		"url": "https://github.com/igorskyflyer/astro-easy-nav-button/issues"
+		"url": "https://github.com/igorskyflyer/astro-easynav-button/issues"
 	},
 	"devDependencies": {
 		"@types/node": "^20.14.10",
