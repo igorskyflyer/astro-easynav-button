@@ -1,4 +1,4 @@
-# Easy Nav Button (⬆️/⬇️)
+# EasyNav Button (⬆️/⬇️)
 
 <br>
 
