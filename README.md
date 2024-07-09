@@ -3,7 +3,7 @@
 <br>
 
 <p align="center">
-	🧭 Add an easy-to-use navigational button (jump to top/bottom) to your Astro site. 🔼
+	🧭 Add an easy-to-use navigational button (jump to <strong>top</strong>/<strong>bottom</strong>) to your <strong><em>Astro</em></strong> site. 🔼
 </p>
 
 <br>
