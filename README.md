@@ -37,7 +37,7 @@
 Install it by executing:
 
 ```shell
-npm i "@igor.dvlpr/astro-easy-nav-button"
+npm i "@igor.dvlpr/astro-easynav-button"
 ```
 
 <br>
@@ -48,7 +48,7 @@ npm i "@igor.dvlpr/astro-easy-nav-button"
 
 ## 🪪 License
 
-Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/astro-easy-nav-button/blob/main/LICENSE).
+Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/astro-easynav-button/blob/main/LICENSE).
 
 ---
 
