@@ -1,6 +1,6 @@
 ## 📒 Changelog
 
-### of [@igor.dvlpr/astro-easy-nav-button](https://github.com/igorskyflyer/astro-easy-nav-button)
+### of [@igor.dvlpr/astro-easynav-button](https://github.com/igorskyflyer/astro-easynav-button)
 
 <br>
 
