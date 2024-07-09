@@ -1,0 +1,33 @@
+{
+  "name": "@igor.dvlpr/$pkg",
+  "version": "1.0.0",
+  "description": "$desc",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20.0"
+  },
+  "types": "./dist/index.d.mts",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "pub": "npm run build && npm publish --access public"
+  },
+  "keywords": [$tags, "igorskyflyer", "igor.dvlpr"],
+  "license": "MIT",
+  "author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
+  "funding": "https://ko-fi.com/igorskyflyer",
+  "homepage": "https://github.com/igorskyflyer/$repo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorskyflyer/$repo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/igorskyflyer/$repo/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3"
+  }
+}
