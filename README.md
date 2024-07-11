@@ -212,15 +212,21 @@ Licensed under the MIT license which is available here, [MIT license](https://gi
 
 ## 🧬 Related
 
-[@igor.dvlpr/windows-packages](https://www.npmjs.com/package/@igor.dvlpr/windows-packages)
+[@igor.dvlpr/astro-post-excerpt](https://www.npmjs.com/package/@igor.dvlpr/astro-post-excerpt)
 
-> _💻 A Node.js module for reading the Packages registry key on Windows 10. Useful for retrieving Windows 10 installed Store applications. 📦_
+> _⭐ An Astro component that renders post excerpts for your Astro blog - directly from your Markdown and MDX files. Astro v2+ collections are supported as well! 💎_
 
 <br>
 
 [@igor.dvlpr/is-rootdir](https://www.npmjs.com/package/@igor.dvlpr/is-rootdir)
 
 > _🔼 Provides a way to check if the given path is the root drive/directory. ⛔_
+
+<br>
+
+[@igor.dvlpr/duoscribi](https://www.npmjs.com/package/@igor.dvlpr/duoscribi)
+
+> _✒ DúöScríbî allows you to convert letters with diacritics to regular letters. 🤓_
 
 <br>
 
@@ -234,15 +240,8 @@ Licensed under the MIT license which is available here, [MIT license](https://gi
 
 > _📖 Provides recursive readdir() and readdirSync() functions. 📁_
 
-<br>
-
-[@igor.dvlpr/chars-in-string](https://www.npmjs.com/package/@igor.dvlpr/chars-in-string)
-
-> _🪐 Provides ways of testing whether an array of chars is present inside a given String. ☄_
-
 ---
 
-<br>
 <br>
 
 Provided by **Igor Dimitrijević** ([*@igorskyflyer*](https://github.com/igorskyflyer/)).
