@@ -64,6 +64,8 @@ import EasyNavButton from '@igor.dvlpr/astro-easynav-button'
 
 This component supports a variety of optional customization and functionality options, listed below:
 
+<br>
+
 ### `polyfillScroll`: `boolean`
 
 Since the component uses the `scrollend` event for properly adjusting its appearance according to the user scroll action and the given event currently has limited availability (source: [caniuse](https://caniuse.com/mdn-api_document_scrollend_event)) a polyfill is enabled by default, set this property to `false` in order to disable the inclusion of the JavaScript polyfill file.  
