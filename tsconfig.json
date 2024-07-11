@@ -1,20 +1,11 @@
 {
-  "include": ["src/**/*"],
-  "exclude": ["node_modules/**/*", "dist/**/*"],
-  "compilerOptions": {
-    "target": "ES2022",
-    "module": "NodeNext",
-    "declaration": true,
-    "outDir": "./dist",
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "declarationDir": "./dist",
-    "moduleResolution": "nodenext",
-    "noEmitOnError": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true
-  }
+	"extends": "astro/tsconfigs/strict",
+	"exclude": [
+		"node_modules",
+	],
+	"compilerOptions": {
+		"jsx": "preserve",
+		"baseUrl": ".",
+		"esModuleInterop": true
+	}
 }
