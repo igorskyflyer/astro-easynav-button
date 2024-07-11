@@ -12,7 +12,7 @@
   "main": "index.ts",
   "module": "index.ts",
   "exports": {
-    ".": "./index.ts"
+    "default": "./index.ts"
   },
   "scripts": {
     "dev": "cd site && astro dev",
