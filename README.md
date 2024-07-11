@@ -86,7 +86,7 @@ The default value is `true`.
 > The polyfill file is minified, served via the jsDelivr CDN and has no side-effects in browsers that already support the `scrollend` event natively.
 >
 
-<br>
+---
 
 ### background: `string`
 
