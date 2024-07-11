@@ -92,7 +92,7 @@ The default value is `true`.
 
 Background color of the button, any valid CSS color (HEX, RGB, RGBA, etc.).  
 
-The default value is `#afc7e5`.
+The default value is `'#afc7e5'`.
 
 <br>
 
@@ -100,7 +100,7 @@ The default value is `#afc7e5`.
 
 Background color of the button when hovered, any valid CSS color (HEX, RGB, RGBA, etc.).  
 
-The default value is `#3869c2`.
+The default value is `'#3869c2'`.
 
 <br>
 
@@ -108,7 +108,7 @@ The default value is `#3869c2`.
 
 Foreground color of the button, any valid CSS color (HEX, RGB, RGBA, etc.).
 
-The default value is `#333333`.
+The default value is `'#333333'`.
 
 <br>
 
@@ -116,7 +116,85 @@ The default value is `#333333`.
 
 Foreground color of the button when hovered, any valid CSS color (HEX, RGB, RGBA, etc.).  
 
-The default value is `#ffffff`.
+The default value is `'#ffffff'`.
+
+<br>
+
+### size: `number`
+
+Size of the button defined as the number of px.  
+
+The default value is `48`.
+
+<br>
+
+### borderRadius: `number`
+
+Border radius of the button defined as the number of px.  
+
+The default value is `6`.
+
+<br>
+
+> [!TIP]
+> Set to `0` to disable round corners.
+>
+
+<br>
+
+### offset: `number`
+
+Offset of the button from the edge of the window defined as the number of px.  
+
+The default value is `10`.
+
+<br>
+
+### fontSize: `number`
+
+The font size of the button defined as the number of px.  
+
+The default value is `30`.
+
+<br>
+
+### animationTime: `string`
+
+The duration of the animation when swapping the up/down arrows applied on the button. Can be any valid CSS time value, in msec, sec, etc.  
+
+The default value is `'250ms'`.
+
+<br>
+
+### iconTop: `string`
+
+A glyph to use as the up arrow icon.  
+
+The default value is `'\25B2'` (U+25B2, &#x25B2;).
+
+<br>
+
+### iconBottom: `string`
+
+A glyph to use as the bottom arrow icon.  
+
+The default value is `'\25BC'` (U+25BC, &#x25BC;).
+
+<br>
+
+### zIndex: `number`
+
+The z-index value for the button. Adjust it only if you have used z-index in your CSS.  
+
+The default value is `999`.
+
+<br>
+
+### position: `'left' | 'right'`
+
+The horizontal position, either left or right edge of the window.  
+
+The default value is `'right'`.
 
 <br>
 
