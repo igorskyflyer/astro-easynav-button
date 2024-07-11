@@ -16,7 +16,7 @@
   },
   "scripts": {
     "dev": "cd site && astro dev",
-    "pub": "npm run build && npm publish --access public"
+    "pub": "npm publish --access public"
   },
   "keywords": [
     "astro",
