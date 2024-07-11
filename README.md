@@ -1,4 +1,10 @@
-<h1 align="center">EasyNav Button (⬆️/⬇️)</h1>
+<div align="center">
+	<img src="./assets/easynav-button.png">
+</div>
+
+<br>
+
+<h1 align="center">EasyNav Button (⬆️/⬇️) for Astro 🚀</h1>
 
 <br>
 
