@@ -66,7 +66,7 @@ This component supports a variety of optional customization and functionality op
 
 <br>
 
-### `polyfillScroll`: `boolean`
+### polyfillScroll: `boolean`
 
 Since the component uses the `scrollend` event for properly adjusting its appearance according to the user scroll action and the given event currently has limited availability (source: [caniuse](https://caniuse.com/mdn-api_document_scrollend_event)) a polyfill is enabled by default, set this property to `false` in order to disable the inclusion of the JavaScript polyfill file.  
 
@@ -86,39 +86,33 @@ The used polyfill was created and is maintained by me as well, it being located:
 
 <br>
 
-### `background`: `string`
+### background: `string`
 
-Background color of the button, any valid CSS color (HEX, RGB, RGBA, etc.)  
+Background color of the button, any valid CSS color (HEX, RGB, RGBA, etc.).  
 
 The default value is `#afc7e5`.
 
 <br>
 
-### `backgroundHover`: `string`
+### backgroundHover: `string`
 
-Background color of the button when hovered, any valid CSS color (HEX, RGB, RGBA, etc.)
-
-<br>
+Background color of the button when hovered, any valid CSS color (HEX, RGB, RGBA, etc.).  
 
 The default value is `#3869c2`.
 
 <br>
 
-### `color`: `string`
+### color: `string`
 
-Foreground color of the button, any valid CSS color (HEX, RGB, RGBA, etc.)
-
-<br>
+Foreground color of the button, any valid CSS color (HEX, RGB, RGBA, etc.).
 
 The default value is `#333333`.
 
 <br>
 
-### `colorHover`: `string`
+### colorHover: `string`
 
-Foreground color of the button when hovered, any valid CSS color (HEX, RGB, RGBA, etc.)
-
-<br>
+Foreground color of the button when hovered, any valid CSS color (HEX, RGB, RGBA, etc.).  
 
 The default value is `#ffffff`.
 
