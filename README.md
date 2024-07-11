@@ -37,7 +37,7 @@
 Install it by executing:
 
 ```shell
-npm i -D "@igor.dvlpr/astro-easynav-button"
+npm i "@igor.dvlpr/astro-easynav-button"
 ```
 
 <br>
