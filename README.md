@@ -42,9 +42,7 @@ npm i -D "@igor.dvlpr/astro-easynav-button"
 
 <br>
 
-## 🤹🏼 API
-
-Import it into your Astro project:
+Then import it into your Astro project:
 
 <br>
 
@@ -61,7 +59,8 @@ import EasyNavButton from '@igor.dvlpr/astro-easynav-button'
 { /* other markup */ }
 </footer>
 ```
-<br>
+
+## 🤹🏼 API
 
 This component support a variety of optional customization and functionality options, listed below:
 
