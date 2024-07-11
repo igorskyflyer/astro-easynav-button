@@ -1,49 +1,50 @@
 {
-	"name": "@igor.dvlpr/astro-easynav-button",
-	"version": "1.0.0",
-	"description": "🧭 Add an easy-to-use navigational button (jump to top/bottom) to your Astro site. 🔼",
-	"sideEffects": false,
-	"engines": {
-		"node": ">=20.0"
-	},
-	"types": "./dist/index.d.mts",
-	"main": "./dist/index.mjs",
-	"module": "./dist/index.mjs",
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"build": "tsc",
-		"pub": "npm run build && npm publish --access public"
-	},
-	"keywords": [
-		"astro",
-		"navigation",
-		"button",
-		"scroll",
-		"scroll-to-top",
-		"scroll-to-bottom",
-		"astro-component",
-		"withastro",
-		"ui",
-		"renderer",
-		"accessibility",
-		"igorskyflyer",
-		"igor.dvlpr"
-	],
-	"license": "MIT",
-	"author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
-	"funding": "https://ko-fi.com/igorskyflyer",
-	"homepage": "https://github.com/igorskyflyer/astro-easynav-button",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/igorskyflyer/astro-easynav-button.git"
-	},
-	"bugs": {
-		"url": "https://github.com/igorskyflyer/astro-easynav-button/issues"
-	},
-	"devDependencies": {
-		"@types/node": "^20.14.10",
-		"typescript": "^5.5.3"
-	}
+  "name": "@igor.dvlpr/astro-easynav-button",
+  "version": "1.0.0",
+  "description": "🧭 Add an easy-to-use navigational button (jump to top/bottom) to your Astro site. 🔼",
+  "sideEffects": false,
+  "type": "module",
+  "engines": {
+    "node": "^18.17.1 || ^20.3.0 || >=21.0.0"
+  },
+  "module": "./dist/index.mjs",
+  "files": ["dist", "index.ts", "Component.astro"],
+  "scripts": {
+    "setup-once": "cd site && npm create astro@latest",
+    "pub": "npm run build && npm publish --access public"
+  },
+  "keywords": [
+    "astro",
+    "navigation",
+    "button",
+    "scroll",
+    "scroll-to-top",
+    "scroll-to-bottom",
+    "astro-component",
+    "withastro",
+    "ui",
+    "renderer",
+    "accessibility",
+    "igorskyflyer",
+    "igor.dvlpr"
+  ],
+  "license": "MIT",
+  "author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
+  "funding": "https://ko-fi.com/igorskyflyer",
+  "homepage": "https://github.com/igorskyflyer/astro-easynav-button",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorskyflyer/astro-easynav-button.git"
+  },
+  "bugs": {
+    "url": "https://github.com/igorskyflyer/astro-easynav-button/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "astro": "^4.11.5",
+    "@biomejs/biome": "^1.8.3"
+  },
+  "peerDependencies": {
+    "astro": ">=1.0.0"
+  }
 }
