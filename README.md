@@ -1,4 +1,4 @@
-# EasyNav Button (⬆️/⬇️)
+<h1 align="center">EasyNav Button (⬆️/⬇️)</h1>
 
 <br>
 
@@ -46,6 +46,12 @@ npm i "@igor.dvlpr/astro-easynav-button"
 
 ---
 
+## 📝 Changelog
+
+> ✨ Changelog is available here: [CHANGELOG.md](https://github.com/igorskyflyer/astro-easynav-button/blob/main/CHANGELOG.md).
+
+---
+
 ## 🪪 License
 
 Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/astro-easynav-button/blob/main/LICENSE).
@@ -54,35 +60,37 @@ Licensed under the MIT license which is available here, [MIT license](https://gi
 
 ## 🧬 Related
 
-[@igor.dvlpr/regkeys](https://www.npmjs.com/package/@igor.dvlpr/regkeys)
+[@igor.dvlpr/windows-packages](https://www.npmjs.com/package/@igor.dvlpr/windows-packages)
 
-> _📚 An npm package for fetching Windows registry keys. 🗝_
-
-<br>
-
-[@igor.dvlpr/pathexists](https://www.npmjs.com/package/@igor.dvlpr/pathexists)
-
-> _🧲 Provides ways of properly checking if a path exists inside a given array of files/directories both on Windows and UNIX-like operating systems. 🗺_
+> _💻 A Node.js module for reading the Packages registry key on Windows 10. Useful for retrieving Windows 10 installed Store applications. 📦_
 
 <br>
 
-[@igor.dvlpr/astro-post-excerpt](https://www.npmjs.com/package/@igor.dvlpr/astro-post-excerpt)
+[@igor.dvlpr/is-rootdir](https://www.npmjs.com/package/@igor.dvlpr/is-rootdir)
 
-> _⭐ An Astro component that renders post excerpts for your Astro blog - directly from your Markdown files. Astro v2 collections are supported as well! 💎_
-
-<br>
-
-[@igor.dvlpr/uarray](https://www.npmjs.com/package/@igor.dvlpr/uarray)
-
-> _🎉 Provides UArray, an Array type that supports negative indices/indexes, just wrap your regular JavaScript array with UArray() and you are all set! 🙌_
+> _🔼 Provides a way to check if the given path is the root drive/directory. ⛔_
 
 <br>
 
-[@igor.dvlpr/registry-apppaths](https://www.npmjs.com/package/@igor.dvlpr/registry-apppaths)
+[@igor.dvlpr/normalized-string](https://www.npmjs.com/package/@igor.dvlpr/normalized-string)
 
-> _🪀 A Node.js module for reading the AppPaths registry key on Windows. Useful for retrieving applications that can be launched from the command prompt. 🗃_
+> _💊 NormalizedString provides you with a String type with consistent line-endings, guaranteed. 📮_
+
+<br>
+
+[@igor.dvlpr/recursive-readdir](https://www.npmjs.com/package/@igor.dvlpr/recursive-readdir)
+
+> _📖 Provides recursive readdir() and readdirSync() functions. 📁_
+
+<br>
+
+[@igor.dvlpr/chars-in-string](https://www.npmjs.com/package/@igor.dvlpr/chars-in-string)
+
+> _🪐 Provides ways of testing whether an array of chars is present inside a given String. ☄_
+
+---
 
 <br>
 <br>
 
-> Provided by **Igor Dimitrijević** ([_@igorskyflyer_](https://github.com/igorskyflyer/)).
+Provided by **Igor Dimitrijević** ([*@igorskyflyer*](https://github.com/igorskyflyer/)).
