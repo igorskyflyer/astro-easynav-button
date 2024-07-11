@@ -10,7 +10,7 @@
   "module": "./dist/index.mjs",
   "files": ["dist", "index.ts", "Component.astro"],
   "scripts": {
-    "setup-once": "cd site && npm create astro@latest",
+    "dev": "cd site && astro dev",
     "pub": "npm run build && npm publish --access public"
   },
   "keywords": [
