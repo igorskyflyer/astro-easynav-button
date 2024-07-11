@@ -6,6 +6,6 @@
 
 ## v1.0.0
 
-<p align="right"><em>10-Jul-2024</em></p>
+<p align="right"><em>12-Jul-2024</em></p>
 
 - **🚀 launch**: initial release 🎉
