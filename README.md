@@ -62,7 +62,7 @@ import EasyNavButton from '@igor.dvlpr/astro-easynav-button'
 
 ## 🤹🏼 API
 
-This component support a variety of optional customization and functionality options, listed below:
+This component supports a variety of optional customization and functionality options, listed below:
 
 ### `polyfillScroll`: `boolean`
 
