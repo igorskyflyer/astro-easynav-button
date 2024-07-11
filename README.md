@@ -90,9 +90,7 @@ The used polyfill was created and is maintained by me as well, it being located:
 
 ### `background`: `string`
 
-Background color of the button, any valid CSS color (HEX, RGB, RGBA, etc.)
-
-<br>
+Background color of the button, any valid CSS color (HEX, RGB, RGBA, etc.)  
 
 The default value is `#afc7e5`.
 
