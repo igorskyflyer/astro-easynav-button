@@ -37,12 +37,30 @@
 Install it by executing:
 
 ```shell
-npm i "@igor.dvlpr/astro-easynav-button"
+npm i -D "@igor.dvlpr/astro-easynav-button"
 ```
 
 <br>
 
 ## 🤹🏼 API
+
+Import it into your Astro project:
+
+<br>
+
+`BaseLayout`
+```jsx
+import EasyNavButton from '@igor.dvlpr/astro-easynav-button'
+
+<footer>
+{ /* other markup */ }
+	<EasyNavButton
+		background="#09F"
+		backgroundHover="#006"
+	/>
+{ /* other markup */ }
+</footer>
+```
 
 ---
 
