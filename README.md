@@ -48,7 +48,7 @@ Import it into your Astro project:
 
 <br>
 
-`BaseLayout`
+`Layout.astro`
 ```jsx
 import EasyNavButton from '@igor.dvlpr/astro-easynav-button'
 
@@ -61,6 +61,22 @@ import EasyNavButton from '@igor.dvlpr/astro-easynav-button'
 { /* other markup */ }
 </footer>
 ```
+<br>
+
+This component support a variety of optional customization and functionality options, listed below:
+
+`polyfillScroll`: `boolean` - since the component uses the `scrollend` event for properly adjusting its appearance according to the user scroll action and the given event currently has limited availability (source: [caniuse](https://caniuse.com/mdn-api_document_scrollend_event)) a polyfill is enabled by default, set this property to `false` in order to disable the inclusion of the JavaScript polyfill file.  
+
+<br>
+
+The used polyfill was created and is maintained by me as well, it being located:
+
+[scrollend-polyfill](https://github.com/igorskyflyer/npm-scrollend-polyfill)
+
+
+> [!NOTE]
+> The polyfill file is minified, served via jsDelivr CDN and has no side-effects in browsers that already support the `scrollend` event natively.
+>
 
 ---
 
