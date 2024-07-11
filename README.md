@@ -64,8 +64,6 @@ import EasyNavButton from '@igor.dvlpr/astro-easynav-button'
 
 This component supports a variety of optional customization and functionality options, listed below:
 
-<br>
-
 ---
 
 ### polyfillScroll: `boolean`
