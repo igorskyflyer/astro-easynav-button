@@ -1,0 +1,162 @@
+---
+// Author: Igor Dimitrijević (@igorskyflyer)
+
+import type { Props } from './dist/Props.mjs'
+export type { Props }
+
+const {
+	polyfillScroll = true,
+	background = '#afc7e5',
+	backgroundHover = '#3869c2',
+	color = '#333',
+	colorHover = '#fff',
+	size = 48,
+	borderRadius = 6,
+	offset = 10,
+	fontSize = 30,
+	animationTime = '250ms',
+	iconTop = '\\25B2',
+	iconBottom = '\\25BC',
+	zIndex = 999,
+	position = 'right'
+} = Astro.props as Props
+
+const styles = `:root {
+		--en-background: ${background};
+		--en-backgroundHover: ${backgroundHover};
+		--en-color: ${color};
+		--en-colorHover: ${colorHover};
+		--en-size: ${size}px;
+		--en-border-radius: ${borderRadius}px;
+		--en-offset: ${offset}px;
+		--en-fontSize: ${fontSize}px;
+		--en-animationTime: ${animationTime};
+		--en-iconTop: "${iconTop}";
+		--en-iconBottom: "${iconBottom}";
+		--en-z-index: ${zIndex};
+	}
+
+	@keyframes animation-content {
+		0% {
+			transform: scale(0);
+		}
+
+		100% {
+			transform: scale(1);
+		}
+	}
+
+	#easy-nav {
+		display: block;
+		position: fixed;
+		width: var(--en-size);
+		height: var(--en-size);
+		${position === 'left' ? 'left' : 'right'}: var(--en-offset);
+		bottom: var(--en-offset);
+		z-index: var(--en-z-index);
+		border-radius: var(--en-border-radius);
+		background: var(--en-background);
+		color: var(--en-color);
+		transition: background-color var(--en-animationTime) ease, color var(--en-animationTime) ease;
+	}
+
+	#easy-nav:hover {
+		background-color: var(--en-backgroundHover);
+		color: var(--en-colorHover)
+	}
+
+	#easy-nav-button {
+		display: block;
+		width: var(--en-size);
+		height: var(--en-size);
+		margin: 0;
+	}
+
+	#easy-nav-button::before {
+		display: flex;
+		justify-content: center;
+  	align-items: center;
+		width: var(--en-size);
+		height: var(--en-size);
+		content: var(--en-iconBottom);
+		text-align: center;
+		font-size: var(--en-fontSize);
+		cursor: pointer;
+	}
+
+	#easy-nav-button.nav-up::before {
+		content: var(--en-iconTop);
+	}
+
+	#easy-nav-button.animate::before {
+		animation-name: animation-content;
+		animation-duration: var(--en-animationTime);
+		animation-fill-mode: forwards;
+		animation-direction: alternate;
+		animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	}`
+---
+
+{
+	polyfillScroll === true && (
+		<script
+			is:inline
+			src="https://cdn.jsdelivr.net/gh/igorskyflyer/npm-scrollend-polyfill/dist/scrollend.min.js"
+			integrity="sha256-6F/bdXudM1cUuqzzFwPFvSw14qQwWeWdhUs+7nG+Kgw="
+			crossorigin="anonymous"
+		/>
+	)
+}
+
+<style set:html={styles}></style>
+
+<div id="easy-nav">
+	<p id="easy-nav-button"></p>
+</div>
+
+<script is:inline>
+	document.addEventListener('DOMContentLoaded', () => {
+		const navButton = document.getElementById('easy-nav-button')
+
+		function easyNavHandleScroll() {
+			const scrollPosition = window.scrollY
+			const documentHeight = document.documentElement.scrollHeight
+			const viewportHeight = window.innerHeight
+			const middlePoint = (documentHeight - viewportHeight) / 2
+
+			if (scrollPosition > middlePoint) {
+				navButton.classList.add('nav-up')
+				navButton.title = 'Go to top'
+				navButton.onclick = () => {
+					window.scrollTo(1, 1)
+				}
+
+				navButton.classList.remove('animate')
+
+				const timeout = setTimeout(() => {
+					navButton.classList.add('animate')
+					clearTimeout(timeout)
+				}, 0)
+			} else {
+				navButton.classList.remove('nav-up')
+				navButton.title = 'Go to bottom'
+				navButton.onclick = () => {
+					window.scrollTo(0, document.body.scrollHeight)
+				}
+
+				navButton.classList.remove('animate')
+
+				const timeout = setTimeout(() => {
+					navButton.classList.add('animate')
+					clearTimeout(timeout)
+				}, 0)
+			}
+		}
+
+		navButton.addEventListener('click', () => {
+			window.scrollTo(0, document.body.scrollHeight)
+		})
+
+		document.addEventListener('scrollend', easyNavHandleScroll)
+	})
+</script>
