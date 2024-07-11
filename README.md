@@ -77,8 +77,8 @@ The default value is `true`.
 > [!TIP]
 > The used polyfill was created and is maintained by me as well, it being located:
 >
-
-[scrollend-polyfill](https://github.com/igorskyflyer/npm-scrollend-polyfill)
+>
+> [scrollend-polyfill](https://github.com/igorskyflyer/npm-scrollend-polyfill)
 
 <br>
 
