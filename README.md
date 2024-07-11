@@ -76,6 +76,7 @@ The used polyfill was created and is maintained by me as well, it being located:
 
 [scrollend-polyfill](https://github.com/igorskyflyer/npm-scrollend-polyfill)
 
+<br>
 
 > [!NOTE]
 > The polyfill file is minified, served via jsDelivr CDN and has no side-effects in browsers that already support the `scrollend` event natively.
