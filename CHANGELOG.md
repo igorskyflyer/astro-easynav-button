@@ -4,6 +4,15 @@
 
 <br>
 
+## v1.1.1
+
+<p align="right"><em>12-Jul-2024</em></p>
+
+- **💻 dev**: fix package and lockfile discrepancy
+
+<br>
+<br>
+
 ## v1.1.0
 
 <p align="right"><em>12-Jul-2024</em></p>
