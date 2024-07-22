@@ -15,4 +15,5 @@ export interface Props {
   color?: string
   colorHover?: string
   position?: 'left' | 'right'
+  show?: 'always' | 'whenNeeded'
 }
