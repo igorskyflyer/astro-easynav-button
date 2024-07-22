@@ -4,7 +4,7 @@
 
 <br>
 
-## v1.2.2
+## v1.3.0
 
 <p align="right"><em>22-Jul-2024</em></p>
 
