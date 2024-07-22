@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="./assets/easynav-button.png">
+  <img src="./assets/easynav-button.png">
 </div>
 
 <br>
@@ -9,31 +9,31 @@
 <br>
 
 <p align="center">
-	🧭 Add an easy-to-use navigational button (jump to <strong>top</strong>/<strong>bottom</strong>) to your <strong><em>Astro</em></strong> site. 🔼
+  🧭 Add an easy-to-use navigational button (jump to <strong>top</strong>/<strong>bottom</strong>) to your <strong><em>Astro</em></strong> site. 🔼
 </p>
 
 <br>
 <br>
 
 <div align="center">
-	<blockquote>
-		<br>
-		<h4>💖 Support further development</h4>
-		<span>I work hard for every project, including this one and your support means a lot to me!
-		<br>
-		Consider buying me a coffee. ☕
-		<br>
-		<strong>Thank you for supporting my efforts! 🙏😊</strong></span>
-		<br>
-		<br>
-		<a href="https://ko-fi.com/igorskyflyer" target="_blank"><img src="https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/ko-fi.png" alt="Donate to igorskyflyer" width="150"></a>
-		<br>
-		<br>
-		<a href="https://github.com/igorskyflyer"><em>@igorskyflyer</em></a>
-		<br>
-		<br>
-		<br>
-	</blockquote>
+  <blockquote>
+    <br>
+    <h4>💖 Support further development</h4>
+    <span>I work hard for every project, including this one and your support means a lot to me!
+    <br>
+    Consider buying me a coffee. ☕
+    <br>
+    <strong>Thank you for supporting my efforts! 🙏😊</strong></span>
+    <br>
+    <br>
+    <a href="https://ko-fi.com/igorskyflyer" target="_blank"><img src="https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/ko-fi.png" alt="Donate to igorskyflyer" width="150"></a>
+    <br>
+    <br>
+    <a href="https://github.com/igorskyflyer"><em>@igorskyflyer</em></a>
+    <br>
+    <br>
+    <br>
+  </blockquote>
 </div>
 
 <br>
@@ -72,10 +72,10 @@ import EasyNavButton from '@igor.dvlpr/astro-easynav-button'
 
 <footer>
 { /* other markup */ }
-	<EasyNavButton
-		background="#09F"
-		backgroundHover="#006"
-	/>
+  <EasyNavButton
+    background="#09F"
+    backgroundHover="#006"
+  />
 { /* other markup */ }
 </footer>
 ```
@@ -237,13 +237,13 @@ The default value is `'whenNeeded'`.
 import EasyNavButton from '@igor.dvlpr/astro-easynav-button'
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<EasyNavButton
-			background="#09F"
-			backgroundHover="#006"
-			show="always"
-		/>
-	</main>
+  <main>
+    <EasyNavButton
+      background="#09F"
+      backgroundHover="#006"
+      show="always"
+    />
+  </main>
 </Layout>
 
 ```
