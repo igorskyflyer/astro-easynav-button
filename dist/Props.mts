@@ -1,9 +1,11 @@
 // Author: Igor Dimitrijević (@igorskyflyer)
 
+import type { Color } from '@igor.dvlpr/common-color'
+
 export interface Props {
   polyfillScroll?: boolean
-  background?: string
-  backgroundHover?: string
+  background?: Color
+  backgroundHover?: Color
   size?: number
   borderRadius?: number
   offset?: number
@@ -12,8 +14,8 @@ export interface Props {
   iconTop?: string
   iconBottom?: string
   zIndex?: number
-  color?: string
-  colorHover?: string
+  color?: Color
+  colorHover?: Color
   position?: 'left' | 'right'
   show?: 'always' | 'whenNeeded'
 }
