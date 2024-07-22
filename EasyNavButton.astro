@@ -18,7 +18,8 @@ const {
 	iconTop = '\\25B2',
 	iconBottom = '\\25BC',
 	zIndex = 999,
-	position = 'right'
+	position = 'right',
+	show = 'whenNeeded'
 } = Astro.props as Props
 
 const styles = `:root {
@@ -44,6 +45,14 @@ const styles = `:root {
 		100% {
 			transform: scale(1);
 		}
+	}
+
+	#easy-nav.show {
+		display: block;
+	}
+
+	#easy-nav.hide {
+		display: none;
 	}
 
 	#easy-nav {
@@ -101,30 +110,48 @@ const styles = `:root {
 	polyfillScroll === true && (
 		<script
 			is:inline
-			src="https://cdn.jsdelivr.net/gh/igorskyflyer/npm-scrollend-polyfill/dist/scrollend.min.js"
-			integrity="sha256-6F/bdXudM1cUuqzzFwPFvSw14qQwWeWdhUs+7nG+Kgw="
+			src="https://cdn.jsdelivr.net/gh/igorskyflyer/npm-scrollend-polyfill@1.2.1/dist/scrollend.min.js"
+			integrity="sha256-3fG8VnL6PFA7RyDVnkG5bk03GMi6Xvy1tIKkSMKJ+Ds="
 			crossorigin="anonymous"
 		/>
 	)
 }
 
-<style set:html={styles}></style>
+<style set:html={styles} nonce="Kgirc5df8Ofi/RGvUBXj1VExFBExBFF+wMKJK1ngIUo="
+></style>
 
-<div id="easy-nav">
+<div
+	id="easy-nav"
+	class={show === 'whenNeeded' ? 'hide' : 'show'}
+	data-show={show}>
 	<p id="easy-nav-button"></p>
 </div>
 
-<script is:inline nonce="la6nW6Sc6zhhlf+a7laJ8g==">
+<script is:inline nonce="StiUiSxMW+YCNgfQH4/w0ngZZp3v+30V5DGTmJoWvgI=">
 	document.addEventListener('DOMContentLoaded', () => {
+		const easyNav = document.getElementById('easy-nav')
+		const easyShow = easyNav.getAttribute('data-show')
 		const navButton = document.getElementById('easy-nav-button')
+		let lastState = ''
+
+		if (
+			easyShow === 'whenNeeded' &&
+			document.documentElement.scrollHeight > window.innerHeight
+		) {
+			easyNav.className = 'show'
+		}
 
 		function easyNavHandleScroll() {
-			const scrollPosition = window.scrollY
 			const documentHeight = document.documentElement.scrollHeight
 			const viewportHeight = window.innerHeight
+			const scrollPosition = window.scrollY
 			const middlePoint = (documentHeight - viewportHeight) / 2
 
 			if (scrollPosition > middlePoint) {
+				if (lastState === 'up') {
+					return
+				}
+
 				navButton.classList.add('nav-up')
 				navButton.title = 'Go to top'
 				navButton.onclick = () => {
@@ -137,7 +164,13 @@ const styles = `:root {
 					navButton.classList.add('animate')
 					clearTimeout(timeout)
 				}, 0)
+
+				lastState = 'up'
 			} else {
+				if (lastState === 'down') {
+					return
+				}
+
 				navButton.classList.remove('nav-up')
 				navButton.title = 'Go to bottom'
 				navButton.onclick = () => {
@@ -150,6 +183,8 @@ const styles = `:root {
 					navButton.classList.add('animate')
 					clearTimeout(timeout)
 				}, 0)
+
+				lastState = 'down'
 			}
 		}
 
@@ -158,5 +193,8 @@ const styles = `:root {
 		})
 
 		document.addEventListener('scrollend', easyNavHandleScroll)
+
+		// fire immediately to set it up
+		easyNavHandleScroll()
 	})
 </script>
