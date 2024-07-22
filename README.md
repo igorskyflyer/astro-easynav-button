@@ -101,16 +101,12 @@ import EasyNavButton from '@igor.dvlpr/astro-easynav-button'
 #### CSP notice
 
 > [!WARNING]
-> This Astro component includes own JavaScript and CSS styles, if you use [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) ![External link](https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/external.svg) in your project you need to add their respective nonces to the allowed sources list.
+> This Astro component includes own JavaScript and CSS styles, if you use [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) ![External link](https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/external.svg) in your project you need to add their respective hashes to the allowed sources list.
 >
 
 <br>
 
-Inline script nonce: `HIhEpHlIWOEP4SenPqtEnL8zJM9UsBDBqhxJtYwwnDs=`  
-
-Inline styles nonce: `klc7YMtNyvqvB5hz8qRaKctP2MvufAibzmC5FZF2pIw=`
-
-<br>
+Inline script SHA-256 hash: `sha256-aGMhbUy8y2j5Fc5+g7gW0rBp+CmqPJ563nYXtcNE6+o=`
 
 ## 🤹🏼 API
 
@@ -136,6 +132,12 @@ The default value is `true`.
 
 > [!NOTE]
 > The polyfill file is minified, served via the jsDelivr CDN and has no side-effects in browsers that already support the `scrollend` event natively.
+>
+
+<br>
+
+> [!WARNING]
+> If you use [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) ![External link](https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/external.svg) in your project you need to add the polyfill's integrity hash to the allowed sources list.
 >
 
 ---
