@@ -101,7 +101,7 @@ import EasyNavButton from '@igor.dvlpr/astro-easynav-button'
 #### CSP notice
 
 > [!WARNING]
-> This Astro component includes own JavaScript and CSS styles, if you use [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) ![External link](https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/external.svg) in your project you need to add their respective nonce.
+> This Astro component includes own JavaScript and CSS styles, if you use [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) ![External link](https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/external.svg) in your project you need to add their respective nonces to the allowed sources list.
 >
 
 <br>
