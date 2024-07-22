@@ -4,6 +4,15 @@
 
 <br>
 
+## v1.3.1
+
+<p align="right"><em>22-Jul-2024</em></p>
+
+- **✅ fix**: update CSP hash
+
+<br>
+<br>
+
 ## v1.3.0
 
 <p align="right"><em>22-Jul-2024</em></p>
