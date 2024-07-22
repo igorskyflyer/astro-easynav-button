@@ -4,15 +4,6 @@
 
 <br>
 
-## v1.2.1
-
-<p align="right"><em>22-Jul-2024</em></p>
-
-- **✅ fix**: remove nonces for inlined assets
-
-<br>
-<br>
-
 ## v1.2.0
 
 <p align="right"><em>22-Jul-2024</em></p>
