@@ -106,9 +106,9 @@ import EasyNavButton from '@igor.dvlpr/astro-easynav-button'
 
 <br>
 
-Inline script nonce: `Kgirc5df8Ofi/RGvUBXj1VExFBExBFF+wMKJK1ngIUo=`  
+Inline script nonce: `HIhEpHlIWOEP4SenPqtEnL8zJM9UsBDBqhxJtYwwnDs=`  
 
-Inline styles nonce: `StiUiSxMW+YCNgfQH4/w0ngZZp3v+30V5DGTmJoWvgI=`
+Inline styles nonce: `klc7YMtNyvqvB5hz8qRaKctP2MvufAibzmC5FZF2pIw=`
 
 <br>
 
