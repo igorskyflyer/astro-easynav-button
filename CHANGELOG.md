@@ -4,6 +4,15 @@
 
 <br>
 
+## v1.2.1
+
+<p align="right"><em>22-Jul-2024</em></p>
+
+- **✅ fix**: update assets nonce
+
+<br>
+<br>
+
 ## v1.2.0
 
 <p align="right"><em>22-Jul-2024</em></p>
