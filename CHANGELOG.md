@@ -4,11 +4,25 @@
 
 <br>
 
+## v1.2.2
+
+<p align="right"><em>22-Jul-2024</em></p>
+
+- **🪅 feat**: use [`@igor.dvlpr/common-color`](https://www.npmjs.com/package/@igor.dvlpr/common-color) for all colors
+
+<br>
+
+- **✅ fix**: switch to using hashes
+- **✅ fix**: remove assets nonces
+
+<br>
+<br>
+
 ## v1.2.1
 
 <p align="right"><em>22-Jul-2024</em></p>
 
-- **✅ fix**: update assets nonce
+- **✅ fix**: update assets nonces
 
 <br>
 <br>
