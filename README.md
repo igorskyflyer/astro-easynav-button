@@ -106,12 +106,6 @@ import EasyNavButton from '@igor.dvlpr/astro-easynav-button'
 
 <br>
 
-Inline script nonce: `Kgirc5df8Ofi/RGvUBXj1VExFBExBFF+wMKJK1ngIUo=`  
-
-Inline styles nonce: `StiUiSxMW+YCNgfQH4/w0ngZZp3v+30V5DGTmJoWvgI=`
-
-<br>
-
 ## 🤹🏼 API
 
 This component supports a variety of optional customization and functionality options, listed below:
