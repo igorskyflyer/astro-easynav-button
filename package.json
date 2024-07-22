@@ -1,6 +1,6 @@
 {
   "name": "@igor.dvlpr/astro-easynav-button",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "🧭 Add an easy-to-use navigational button (jump to top/bottom) to your Astro site. 🔼",
   "sideEffects": false,
   "type": "module",
