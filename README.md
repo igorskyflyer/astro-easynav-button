@@ -108,6 +108,8 @@ import EasyNavButton from '@igor.dvlpr/astro-easynav-button'
 
 Inline script SHA-256 hash: `sha256-aGMhbUy8y2j5Fc5+g7gW0rBp+CmqPJ563nYXtcNE6+o=`
 
+---
+
 ## 🤹🏼 API
 
 This component supports a variety of optional customization and functionality options, listed below:
