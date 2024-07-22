@@ -37,6 +37,20 @@
 </div>
 
 <br>
+<br>
+
+## 📃 Table of contents
+
+- [Usage](#-usage)
+- [API](#-api)
+- [Examples](#-examples)
+- [Changelog](#-changelog)
+- [License](#-license)
+- [Related](#-related)
+- [Author](#-author)
+
+<br>
+<br>
 
 ## 🕵🏼 Usage
 
@@ -204,6 +218,38 @@ The default value is `'right'`.
 
 ---
 
+### show: `'always' | 'whenNeeded'`
+
+Defines when to show the button.  
+
+`'always'` will ignore if scrolling is possible (scrollbar visible),  
+
+`'whenNeeded'` will check if scrolling is possible (scrollbar visible) and change the button's visibility based on it.
+
+The default value is `'whenNeeded'`.
+
+---
+
+## ✨ Examples
+
+`index.astro`
+```jsx
+import EasyNavButton from '@igor.dvlpr/astro-easynav-button'
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<EasyNavButton
+			background="#09F"
+			backgroundHover="#006"
+			show="always"
+		/>
+	</main>
+</Layout>
+
+```
+
+---
+
 ## 📝 Changelog
 
 > ✨ Changelog is available here: [CHANGELOG.md](https://github.com/igorskyflyer/astro-easynav-button/blob/main/CHANGELOG.md).
@@ -224,30 +270,31 @@ Licensed under the MIT license which is available here, [MIT license](https://gi
 
 <br>
 
-[@igor.dvlpr/is-rootdir](https://www.npmjs.com/package/@igor.dvlpr/is-rootdir)
-
-> _🔼 Provides a way to check if the given path is the root drive/directory. ⛔_
-
-<br>
-
-[@igor.dvlpr/duoscribi](https://www.npmjs.com/package/@igor.dvlpr/duoscribi)
-
-> _✒ DúöScríbî allows you to convert letters with diacritics to regular letters. 🤓_
-
-<br>
-
-[@igor.dvlpr/normalized-string](https://www.npmjs.com/package/@igor.dvlpr/normalized-string)
-
-> _💊 NormalizedString provides you with a String type with consistent line-endings, guaranteed. 📮_
-
-<br>
-
 [@igor.dvlpr/recursive-readdir](https://www.npmjs.com/package/@igor.dvlpr/recursive-readdir)
 
 > _📖 Provides recursive readdir() and readdirSync() functions. 📁_
+
+<br>
+
+[@igor.dvlpr/valid-path](https://www.npmjs.com/package/@igor.dvlpr/valid-path)
+
+> _🧰 Provides ways of testing whether a given value can be a valid file/directory name. 🏜_
+
+<br>
+
+[@igor.dvlpr/windev](https://www.npmjs.com/package/@igor.dvlpr/windev)
+
+> _🍃 Provides ways of checking whether a path is a legacy Windows device. 💾_
+
+<br>
+
+[@igor.dvlpr/extendable-string](https://www.npmjs.com/package/@igor.dvlpr/extendable-string)
+
+> _🦀 ExtendableString allows you to create strings on steroids that have custom transformations applied to them, unlike common, plain strings.. 🪀_
 
 ---
 
 <br>
 
-Provided by **Igor Dimitrijević** ([*@igorskyflyer*](https://github.com/igorskyflyer/)).
+### 👨🏻‍💻 Author
+Created by **Igor Dimitrijević** ([*@igorskyflyer*](https://github.com/igorskyflyer/)).
