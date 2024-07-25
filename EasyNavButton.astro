@@ -4,22 +4,24 @@
 import type { Props } from './dist/Props.mjs'
 export type { Props }
 
+import SafeResource from '@igor.dvlpr/astro-saferesource'
+
 const {
-	polyfillScroll = true,
-	background = '#afc7e5',
-	backgroundHover = '#3869c2',
-	color = '#333',
-	colorHover = '#fff',
-	size = 48,
-	borderRadius = 6,
-	offset = 10,
-	fontSize = 30,
-	animationTime = '250ms',
-	iconTop = '\\25B2',
-	iconBottom = '\\25BC',
-	zIndex = 999,
-	position = 'right',
-	show = 'whenNeeded'
+  polyfillScroll = true,
+  background = '#afc7e5',
+  backgroundHover = '#3869c2',
+  color = '#333',
+  colorHover = '#fff',
+  size = 48,
+  borderRadius = 6,
+  offset = 10,
+  fontSize = 30,
+  animationTime = '120ms',
+  iconTop = '\\25B2',
+  iconBottom = '\\25BC',
+  zIndex = 999,
+  position = 'right',
+  show = 'whenNeeded'
 } = Astro.props as Props
 
 const styles = `:root {
@@ -107,96 +109,95 @@ const styles = `:root {
 ---
 
 {
-	polyfillScroll === true && (
-		<script
-			is:inline
-			src="https://cdn.jsdelivr.net/gh/igorskyflyer/npm-scrollend-polyfill@1.2.1/dist/scrollend.min.js"
-			integrity="sha256-3fG8VnL6PFA7RyDVnkG5bk03GMi6Xvy1tIKkSMKJ+Ds="
-			crossorigin="anonymous"
-		/>
-	)
+  polyfillScroll === true && (
+    <script
+      is:inline
+      src="https://cdn.jsdelivr.net/gh/igorskyflyer/npm-scrollend-polyfill@1.2.1/dist/scrollend.min.js"
+      integrity="sha256-3fG8VnL6PFA7RyDVnkG5bk03GMi6Xvy1tIKkSMKJ+Ds="
+      crossorigin="anonymous"
+    />
+  )
 }
 
 <style set:html={styles}></style>
 
 <div
-	id="easy-nav"
-	class={show === 'whenNeeded' ? 'hide' : 'show'}
-	data-show={show}>
-	<p id="easy-nav-button"></p>
+  id="easy-nav"
+  class={show === 'whenNeeded' ? 'hide' : 'show'}
+  data-show={show}>
+  <p id="easy-nav-button"></p>
 </div>
 
-<script
-	is:inline
-	integrity="sha256-HIhEpHlIWOEP4SenPqtEnL8zJM9UsBDBqhxJtYwwnDs="
->
-	document.addEventListener('DOMContentLoaded', () => {
-		const easyNav = document.getElementById('easy-nav')
-		const easyShow = easyNav.getAttribute('data-show')
-		const navButton = document.getElementById('easy-nav-button')
-		let lastState = ''
+<SafeResource>
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+      const easyNav = document.getElementById('easy-nav')
+      const easyShow = easyNav.getAttribute('data-show')
+      const navButton = document.getElementById('easy-nav-button')
+      let lastState = ''
 
-		if (
-			easyShow === 'whenNeeded' &&
-			document.documentElement.scrollHeight > window.innerHeight
-		) {
-			easyNav.className = 'show'
-		}
+      if (
+        easyShow === 'whenNeeded' &&
+        document.documentElement.scrollHeight > window.innerHeight
+      ) {
+        easyNav.className = 'show'
+      }
 
-		function easyNavHandleScroll() {
-			const documentHeight = document.documentElement.scrollHeight
-			const viewportHeight = window.innerHeight
-			const scrollPosition = window.scrollY
-			const middlePoint = (documentHeight - viewportHeight) / 2
+      function easyNavHandleScroll() {
+        const documentHeight = document.documentElement.scrollHeight
+        const viewportHeight = window.innerHeight
+        const scrollPosition = window.scrollY
+        const middlePoint = (documentHeight - viewportHeight) / 2
 
-			if (scrollPosition > middlePoint) {
-				if (lastState === 'up') {
-					return
-				}
+        if (scrollPosition > middlePoint) {
+          if (lastState === 'up') {
+            return
+          }
 
-				navButton.classList.add('nav-up')
-				navButton.title = 'Go to top'
-				navButton.onclick = () => {
-					window.scrollTo(1, 1)
-				}
+          navButton.classList.add('nav-up')
+          navButton.title = 'Go to top'
+          navButton.onclick = () => {
+            window.scrollTo(1, 1)
+          }
 
-				navButton.classList.remove('animate')
+          navButton.classList.remove('animate')
 
-				const timeout = setTimeout(() => {
-					navButton.classList.add('animate')
-					clearTimeout(timeout)
-				}, 0)
+          const timeout = setTimeout(() => {
+            navButton.classList.add('animate')
+            clearTimeout(timeout)
+          }, 0)
 
-				lastState = 'up'
-			} else {
-				if (lastState === 'down') {
-					return
-				}
+          lastState = 'up'
+        } else {
+          if (lastState === 'down') {
+            return
+          }
 
-				navButton.classList.remove('nav-up')
-				navButton.title = 'Go to bottom'
-				navButton.onclick = () => {
-					window.scrollTo(0, document.body.scrollHeight)
-				}
+          navButton.classList.remove('nav-up')
+          navButton.title = 'Go to bottom'
+          navButton.onclick = () => {
+            window.scrollTo(0, document.body.scrollHeight)
+          }
 
-				navButton.classList.remove('animate')
+          navButton.classList.remove('animate')
 
-				const timeout = setTimeout(() => {
-					navButton.classList.add('animate')
-					clearTimeout(timeout)
-				}, 0)
+          const timeout = setTimeout(() => {
+            navButton.classList.add('animate')
+            clearTimeout(timeout)
+          }, 0)
 
-				lastState = 'down'
-			}
-		}
+          lastState = 'down'
+        }
+      }
 
-		navButton.addEventListener('click', () => {
-			window.scrollTo(0, document.body.scrollHeight)
-		})
+      navButton.addEventListener('click', () => {
+        window.scrollTo(0, document.body.scrollHeight)
+      })
 
-		document.addEventListener('scrollend', easyNavHandleScroll)
+      document.addEventListener('scrollend', easyNavHandleScroll)
 
-		// fire immediately to set it up
-		easyNavHandleScroll()
-	})
-</script>
+      // fire immediately to set it up
+      easyNavHandleScroll()
+    })
+  </script>
+</SafeResource>
