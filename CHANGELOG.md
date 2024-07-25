@@ -4,6 +4,15 @@
 
 <br>
 
+## v1.4.0
+
+<p align="right"><em>25-Jul-2024</em></p>
+
+- **💻 dev**: use automatic CSP-complaint inline script hashing via [@igor.dvlpr/astro-saferesource](https://www.npmjs.com/package/@igor.dvlpr/astro-saferesource)
+
+<br>
+<br>
+
 ## v1.3.1
 
 <p align="right"><em>22-Jul-2024</em></p>

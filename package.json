@@ -8,11 +8,7 @@
   "engines": {
     "node": "^18.17.1 || ^20.3.0 || >=21.0.0"
   },
-  "files": [
-    "dist",
-    "index.ts",
-    "EasyNavButton.astro"
-  ],
+  "files": ["dist", "index.ts", "EasyNavButton.astro"],
   "main": "index.ts",
   "module": "index.ts",
   "exports": {
