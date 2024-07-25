@@ -4,6 +4,15 @@
 
 <br>
 
+## v1.4.1
+
+<p align="right"><em>25-Jul-2024</em></p>
+
+- **💻 dev**: fix external package import
+
+<br>
+<br>
+
 ## v1.4.0
 
 <p align="right"><em>25-Jul-2024</em></p>
