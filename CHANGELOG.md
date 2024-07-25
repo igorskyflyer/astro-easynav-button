@@ -4,6 +4,15 @@
 
 <br>
 
+## v1.4.2
+
+<p align="right"><em>25-Jul-2024</em></p>
+
+- **💻 dev**: fix dependency import
+
+<br>
+<br>
+
 ## v1.4.1
 
 <p align="right"><em>25-Jul-2024</em></p>
