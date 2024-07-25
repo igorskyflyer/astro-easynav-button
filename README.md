@@ -101,12 +101,12 @@ import EasyNavButton from '@igor.dvlpr/astro-easynav-button'
 #### CSP notice
 
 > [!WARNING]
-> This Astro component includes own JavaScript and CSS styles, if you use [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) ![External link](https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/external.svg) in your project you need to add their respective integrity hashes to the allowed sources list.
+> This Astro component includes its own JavaScript, if you use [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) ![External link](https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/external.svg) in your project you need to add its respective integrity hash to the allowed sources list.
 >
 
 <br>
 
-Inline script SHA-256 hash: `sha256-aGMhbUy8y2j5Fc5+g7gW0rBp+CmqPJ563nYXtcNE6+o=`
+Inline script SHA-256 hash: `sha256-KWtqqqQFySoITWIucvZhAoWjT2J9jdUA7LfvxyqjJvQ=`
 
 <br>
 <br>
